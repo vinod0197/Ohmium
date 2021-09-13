@@ -1,0 +1,247 @@
+.service-content {
+	display: flex;
+	flex-wrap: wrap;
+	.service-pic-text {
+		width: 25%;
+		overflow: hidden;
+		.service-pic {
+			transition: .8s all ease-in-out;
+		}
+		&:after {
+			top: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+			height: 100%;
+			position: absolute;
+			transition: .8s all ease-in-out;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		.service-text {
+			left: 0;
+			right: 0;
+			z-index: 1;
+			bottom: 110px;
+			position: absolute;
+			transition: .3s all ease-in-out;
+			h3,
+			a {
+				color: #fff;
+				font-size: 30px;
+				font-weight: 700;
+			}
+			a {
+				opacity: 0;
+				visibility: hidden;
+				font-size: 14px;
+				i {
+					@extend%arrow-icon;
+					margin-left: 8px;
+					transition: .3s all ease-in-out;
+				}
+				&:hover {
+					i {
+						margin-left: 12px;
+					}
+				}
+			}
+		}
+		&:hover {
+			&:after {
+				background-color: rgba(0, 0, 0, .7);
+			}
+			.service-pic {
+				transform: scale(1.1); 
+			}
+			.service-text {
+				bottom: 150px;
+				a {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+.service-counter-section {
+	.about-counter .about-counter-text-number {
+		width: 100%;
+		float: none;
+	}
+}
+// *** service single page ***//
+.service-details-section {
+	padding: 110px 0 210px;
+	.service-sidebar {
+		margin-right: 20px;
+	}
+	.service-single-content {
+		.service-details-img-pair {
+			margin-bottom: 30px;
+		}
+		h3 {
+			color: #222222;
+			font-size: 42px;
+			font-weight: 700;
+			padding-bottom: 20px;
+		}
+		article {
+			margin-bottom: 20px;
+		}
+		h4 {
+			font-size: 30px;
+			color: #222222;
+			font-weight: 700;
+			padding-bottom: 10px;
+
+		}
+		.service-details-list {
+			margin-top: 15px;
+			ul {
+				margin-bottom: 30px;
+			}
+			li {
+				color: #222222;
+				font-weight: 600;
+				position: relative;
+				padding-left: 30px;
+				&:before {
+					left: 0;
+					top: 0;
+					content: '\f138';
+					font-weight: 900;
+					position: absolute;
+					color: $base-color2;
+					font-family: 'Font Awesome 5 Free';
+				}
+			}
+		}
+		.service-single-icon-text {
+			margin: 0px -5px;
+			.site-info-icon-text {
+				width: 48%;
+				float: left;
+				margin: 30px 5px 30px 5px;
+				padding: 40px 30px 35px 30px;
+				box-shadow: 0px 9px 40px 0px rgba(193, 193, 193, 0.5);
+				&:after {
+					display: none;
+				}
+				.site-info-icon svg {
+					height: 60px;
+				}
+				.site-info-text {
+					h3 {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+.service-sidebar-widget {
+	margin-bottom: 30px;
+	.service-cat-widget {
+		@extend%category-widget;
+		padding: 38px;
+		background-color: #edf1f4;
+		.widget-title {
+			font-size: 22px;
+			color: #222222;
+			font-weight: 800;
+		}
+	}
+	.help-widget {
+		background-color: $base-color;
+		padding: 40px 30px;
+		.widget-title {
+			@extend%widget-title-shape;
+			margin-bottom: 30px;
+		}
+		span {
+			color: #fff;
+		}
+		.contact-text {
+			p {
+				padding-top: 5px;
+				color: #fff; 
+				i {
+					font-size: 24px;
+					
+				}
+				strong {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	.opening-hour-widget {
+		background-color: $base-color2;
+		padding: 40px 30px;
+		span {
+			color: #fff;
+		}
+		.widget-title {
+			@extend%widget-title-shape;
+			margin-bottom: 30px;
+		}
+		.opening-hour-content {
+			margin-bottom: 15px;
+			span,strong {
+				display: block;
+				color: #fff;
+				line-height: 1.6;
+			}
+		}
+	}
+}
+.service-counter-section {
+	padding-bottom: 80px;
+	.about-counter .about-counter-text-number .counter-number h4,
+	.about-counter .about-counter-text-number .counter-number strong {
+		color: #222222;
+	}
+	.service-counter-content {
+		.col-lg-3 {
+			&:nth-child(2),
+			&:nth-child(3) {
+				.about-counter-text-number {
+					padding-left: 40px;	
+				}
+			}
+			&:nth-child(4) {
+				.about-counter-text-number {
+					padding-left: 50px;
+				}
+			}
+		}
+	}
+}
+.add-widget {
+	z-index: 1;
+	padding: 35px 35px 50px;
+	.background_overlay {
+		z-index: -1;
+		background-color: rgba(0,0,0, .9);
+	}
+	h3 {
+		color: #fff;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	p {
+		color: #fff;
+		padding: 20px 0px 40px;
+	}
+	a {
+		display: inline-block;
+		border: 2px solid #fff;
+		padding: 10px 25px;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
+		img {
+			margin-left: 10px;
+		}
+	}
+}

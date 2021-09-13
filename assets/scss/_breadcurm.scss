@@ -1,0 +1,45 @@
+.breadcrumb-section {
+	padding: 135px 0px;
+	position: relative;
+	z-index: 1;
+	.background_overlay {
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+	.breadcrumb-content {
+		padding-left: 45px;
+	}
+	.breadcrumb-title {
+		color: #fff;
+		font-size: 60px;
+		font-weight: 700;
+		position: relative;
+		padding-bottom: 10px;
+		&:before {
+			top: 25px;
+			content: '';
+			left: -45px;
+			width: 24px;
+			height: 20px;
+			position: absolute;
+			background-image: url(../icon/icon5.svg);
+		}
+	}
+	.breadcrumb-item+.breadcrumb-item::before {
+		content: '';
+		width: 26px;
+		height: 10px;
+		left: -40px;
+		position: absolute;
+		bottom: 8px;
+		background-image: url(../img/arrow3.png);
+	}
+	.breadcrumb {
+		background-color: transparent;
+		li {
+			color: #fff;
+			position: relative;
+			padding-right: 50px;
+		}
+	}
+}

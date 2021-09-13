@@ -1,0 +1,139 @@
+.project-section {
+	padding: 105px 0px 110px;
+	.project-text-content {
+		padding-bottom: 20px;
+	}
+	.section-title-left {
+		max-width: 330px;
+	}
+	.grid-item-width {width: 33.33%;}
+	.grid-item-big {width: 66.67%;}
+	.grid-sizer {
+		width: 33.33%;
+	}
+	.grid-item {
+		padding: 15px;
+	}
+	.grid-item-width2 {width: 50%;}
+	.grid-sizer, .grid-item {
+		float: left;
+		overflow: hidden;
+		position: relative;
+		display: inline-block;
+	}
+	.project-filter-btn {
+		padding-top: 113px;
+		button {
+			border: none;
+			color: #555555;
+			font-weight: 600;
+			font-size: 15px;
+			padding: 0px 0px 0px 30px;
+			text-transform: uppercase;
+			background-color: transparent;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '';
+				height: 15px;
+				width: 2px;
+				background-color: #dadada;
+				top: 7px;
+				right: -17px;
+			}
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.filter-button.is-checked {
+			color: $base-color2;
+		}
+	}
+	.projecct-img {
+		overflow: hidden;
+		img {
+			transition: .3s all ease-in-out;
+		}
+		@extend%hover-overlay;
+		.project-item-text {
+			color: #fff;
+			bottom: 30px;
+			left: 40px;
+			z-index: 1;
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			transition: .3s all ease-in-out;
+			p {
+				font-size: 16px;
+				font-weight: 300;
+			}
+			h3 {
+				font-size: 22px;
+				font-weight: 600;
+			}
+		}
+		.popup-project {
+			@extend%pluse-hover; 
+		}
+		&:hover {
+			&:after {
+				opacity: 1;
+				transform: scale(1);
+				visibility: visible;
+			}
+			img {
+				transform: scale(1.1);
+			}
+			.project-item-text {
+				opacity: 1;
+				bottom: 55px;
+				visibility: visible;
+			}
+			.popup-project {
+				&:before {
+					height: 55px;
+				}
+				&:after {
+					width: 55px;
+				}
+			}
+		}
+	}
+	.project-more-btn {
+		height: 55px;
+		width: 190px;
+		background-color: $base-color2;
+		border-radius: 3px;
+		line-height: 55px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 45px;
+		a {
+			width: 100%;
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			font-weight: 700;
+			i {
+				@extend%arrow-icon;
+			}
+			&:hover {
+				background-color: $base-color;
+			}
+		}
+	}
+}
+.project-section-two {
+	padding-top: 180px;
+	.grid-sizer {
+		width: 50%;
+	}
+	.projecct-img .popup-project {
+		top: 105px;
+		left: auto;
+		right: 60px;
+	}
+}

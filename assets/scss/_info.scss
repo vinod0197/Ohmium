@@ -1,0 +1,77 @@
+.eltron-info-section {
+	overflow: visible;
+	.info-content {
+		bottom: -90px;
+		max-width: 770px;
+		position: relative;
+		display: inline-block;
+		padding: 60px 100px 70px;
+		z-index: 1;
+		.section-title-left {
+			span {
+				color: #fff;
+			}
+			h2 {
+				color: #fff;
+			}
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: -1;
+			content: '';
+			height: 100%;
+			opacity: .95;
+			position: absolute;
+			background-color: #051925;
+		}
+		&:after {
+			top: 0;
+			left: 0;
+			content: '';
+			width: 100%;
+			z-index: -2;
+			height: 100%;
+			position: absolute;
+			background-image: url(../img/background/d-shape.png);
+		}
+	}
+	.eltron-info-text {
+		span {
+			color: #fff;
+			display: block;
+			font-size: 24px;
+			font-style: italic;
+			margin-bottom: 50px;
+		}
+	}
+	.eltron-info-icon-text {
+		width: 50%;
+		float: left;
+		.eltron-info-icon {
+			width: 80px;
+			height: 80px;
+			position: relative;
+			border-radius: 100%;
+			background-color: #fff;
+			margin: 0px 0px 30px 10px;
+			@extend%border-pluse;
+			svg {
+				height: 75px;
+				fill: $base-color2;
+			}
+		}
+		.eltron-info-text-details {
+			h3 {
+				color: #fff;
+				font-size: 18px;
+				font-weight: 600;
+				padding-bottom: 8px;
+			}
+			p {
+				color: #b6d0df;
+			}
+		}
+	}
+}

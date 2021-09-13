@@ -1,0 +1,257 @@
+%left-icon {
+	height: 80px;
+	width: 100px;
+	float: left;
+	display: flex;
+	border-radius: 6px;
+	margin-right: 40px;
+	align-items: center;
+	justify-content: center;
+	background-color: #005a90;
+	i {
+		font-size: 35px;
+		color: $base-color2;
+	}
+}
+%input-fix {
+	border: none;
+}
+%button-fix {
+	border:  none;
+	background-color: transparent;
+}
+%el-btn {
+	height: 60px;
+	width: 190px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 60px;
+	display: inline-block;
+	text-transform: uppercase;
+	background-color: $base-color2;
+	img {
+		margin-left: 8px;
+	}
+}
+%hover-overlay {
+	&:after {
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		content: '';
+		height: 100%;
+		visibility: hidden;
+		position: absolute;
+		transform: scale(.5);
+		transition: .3s all ease-in-out;
+		background-color: rgba(0, 113, 179, 0.9);
+	}
+}
+%pluse-hover {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 55px;
+	width: 55px;
+	z-index: 3;
+	transform: translateY(-50%);
+	&:before {
+		top: -25px;
+		left: 25px;
+		width: 3px;
+		content: '';
+		height: 0px;
+		background-color: #fff;
+		position: absolute;
+		transition: .5s all ease-in-out;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		height: 3px;
+		width: 0px;
+		background-color: #fff;
+		transition: .5s all ease-in-out;
+	}
+}
+%menu-line {
+	&:after {
+		top: 6px;
+		width: 2px;
+		content: '';
+		right: -15px;
+		height: 15px;
+		position: absolute;
+		background-color: #5ea5d0;
+
+	}
+	&:last-child{
+		&:after {
+			display: none;
+		}
+	}
+}
+%about-video-btn {
+	a {
+		display: flex;
+	}
+	i {
+		color: #eda213;
+		font-size: 40px;
+		margin-right: 10px;
+	}
+	span {
+		margin-top: 5px;
+		color: #004168;
+		font-size: 14px;
+		font-weight: 700;
+		display: inline-block;
+		text-decoration: underline;
+	}
+	img {
+		margin-left: 12px;
+	}
+}
+%border-pluse {
+	&:after {
+		top: -10px;
+		left: -10px;
+		opacity: .2;
+		width: 100px;
+		content: '';
+		height: 100px;
+		position: absolute;
+		border-radius: 100%;
+		background-color: #fff;
+	}
+}
+%header-shape {
+	&:after {
+		position: absolute;
+		content: '';
+		height: 110px;
+		width: 1px;
+		right: 0;
+		background-color: #6f6f6f;
+
+	}
+}
+%category-widget {
+	li {
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+		z-index: 1;
+		transition: .3s all ease-in-out;
+		a {
+			width: 100%;
+			display: block;
+			color: #222222;
+			font-size: 18px;
+		}
+		&:before {
+			left: 0;
+			top: 20px;
+			width: 28px;
+			content: '';
+			height: 20px;
+			position: absolute;
+			opacity: 0;
+			background-repeat: no-repeat;
+			transition: .3s all ease-in-out;
+			background-image: url(../img/arrow3.png);
+		}
+		&:after {
+			top: 0;
+			content: '';
+			width: 0;
+			height: 100%;
+			z-index: -1;
+			left: -37px;
+			position: absolute;
+			background-color: $base-color2;
+			transition: .5s all ease-out;
+		}
+		&:hover {
+			padding-left: 32px;
+			&:before {
+				opacity: 1;
+			}
+			&:after {
+				width: 340px;
+				transition: .3s all ease-in;
+			}
+			a {
+				color: #fff;
+			}
+		}
+
+	}
+}
+%widget-title-shape {
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	position: relative;
+	&:after {
+		position: absolute;
+		content: '';
+		height: 2px;
+		width: 50px;
+		background-color: #fff;
+		left: 0;
+		bottom: -10px;
+	}
+}
+%btn-hover {
+	position: relative;
+	z-index: 1;
+	&:before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 0;
+		top: 0;
+		left: auto;
+		right: 0;
+		z-index: -1;
+		border-radius: 2px;
+		transition: .3s all ease-in-out;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			left: 0;
+			right: auto;;
+		}
+	}
+}
+%arrow-icon {
+	line-height: 1;
+	top: 4px;
+	font-size: 26px;
+	margin-left: 4px;
+	position: relative;
+}
+%video-play {
+	&:after {
+		content: "\f100";;
+		position: absolute;
+		top: -7px;
+		right: -35px;
+		font-size: 26px;
+		font-family: Flaticon;
+		color: $base-color2;
+		transition: .3s all ease-in-out;
+	}
+	&:hover {
+		&:after {
+			right: -45px;
+		}
+	}
+}

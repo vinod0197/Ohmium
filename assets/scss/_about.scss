@@ -1,0 +1,74 @@
+.about-section {
+	padding-bottom: 90px;
+	.about-text {
+		max-width: 510px;
+		padding-top: 20px;
+		.about-text1 {
+			margin-bottom: 30px;
+		}
+		.about-text2 {
+			margin-bottom: 35px;
+		}
+		.about-btn {
+			@extend%about-video-btn;
+			position: relative;
+			display: inline-block;
+			@extend%video-play;
+		}
+	}
+	.about-img {
+		margin: 0px -10px;
+		.abt-img-set {
+			float: left;
+			margin: 0px 10px;
+			margin-bottom: 20px;
+		}
+	}
+}
+// *** Hoeme Page 2 **//
+.about-counter {
+	.about-counter-text-number {
+		width: 50%;
+		float: left;
+		h4 {
+			font-size: 18px;
+			font-weight: 700;
+			padding-bottom: 18px;
+		}
+		.counter-icon {
+			margin-right: 15px;
+			svg {
+
+			}
+		}
+		.counter-number {
+			h4 {
+				font-size: 50px;
+				font-weight: 700;
+				color: $base-color;
+				display: inline-block;
+			}
+			strong {
+				color: #555555;
+				font-size: 30px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+.about-section-two {
+	&:before {
+		top: 0;
+		left: 0;
+		content: '';
+		opacity: .5;
+		height: 100%;
+		width: 540px;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-image: url(../img/background/abbg.png);
+	}
+}
+.about-page-about {
+	padding: 110px 0px 90px;
+}

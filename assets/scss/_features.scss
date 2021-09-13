@@ -1,0 +1,235 @@
+.features-section {
+	z-index: 1;
+	padding: 100px 0px 110px;
+	.background_overlay {
+		z-index: -1;
+		background-color: rgba(0, 113, 179, 0.95);
+	}
+	.section-title-middle {
+		margin: 0 auto;
+		max-width: 700px;
+		padding-bottom: 60px;
+		.title-tag {
+			color: #fff;
+			svg {
+				fill: #fff;
+			}
+		}
+		h2 {
+			color: #fff;
+		}
+	}
+}
+.features-icon-text {	
+	border-radius: 2px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	padding: 55px 0px 50px 0px;
+	transition: .3s all ease-in-out;
+	.features-icon {
+		margin-bottom: 20px;
+		svg {
+			height: 90px;
+			fill: $base-color2;
+		}
+	}
+	.features-text {
+		h3 {
+			color: #222222;
+			font-size: 22px;
+			font-weight: 700;
+			padding-bottom: 8px;
+		}
+		p {
+			font-weight: 300;
+			font-size: 14px;
+		}
+	}
+	.features-hover-content {
+		top: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		padding: 50px 45px;
+		position: absolute;
+		background-color: #0fc5d3;
+		opacity: 0;
+		visibility: hidden;
+		border-radius: 2px;
+		transition: .3s all ease-in-out;
+		.fh-icon-bg {
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			svg {
+				height: 205px;
+				fill: #0ebbca;
+			}
+		}
+		.features-hover-text {
+			h3 {
+				color: #fff;
+				font-size: 22px;
+				font-weight: 700;
+				padding-bottom: 18px;
+			}
+			p {
+				color: #fff;
+			}
+			.fh-more {
+				margin-top: 25px;
+				a {
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	&:hover {
+		padding-bottom: 65px;
+		margin-bottom: 0px;
+		.features-hover-content {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+// *** Home Page two***//
+.feature-style-two {
+	z-index: 1;
+	overflow: visible;
+	padding: 110px 0px 0px;
+	background-color: $base-color;
+	.background_overlay {
+		background-color: rgba(0, 113, 179, 0.95);
+		z-index: -1;
+	}
+	.section-title-left {
+		max-width: 580px;
+		margin: 0 auto;
+		padding-bottom: 40px;
+		span, h2 {
+			color: #fff;
+		}
+	}
+	.feature-slide-content {
+		padding-bottom: 30px;
+	}
+	.feature-slide-icon-text {
+		padding: 50px 20px;
+		border-radius: 2px;
+		transition: .3s all ease-in-out;
+		border: 1px solid  rgba(255, 255, 255, 0.502);
+		.feature-slide-icon {
+			margin-bottom: 15px;
+			svg {
+				fill: #fff;
+				transition: .3s all ease-in-out;
+			}
+		}
+		.feature-slide-text {
+			h3 {
+				color: #fff;
+				font-size: 22px;
+				font-weight: 700;
+				padding-bottom: 20px;
+			}
+			p {
+				color: rgba(255, 255, 255, 0.502);
+			}
+		}
+		&:hover {
+			background-color: #0d1c25;
+			border: 1px solid  #0d1c25;
+			.feature-slide-icon {
+				svg {
+					fill: $base-color2;
+				}
+			}
+		}
+	}
+	.features-call-action {
+		z-index: 1;
+		bottom: -75px;
+		background-color: #fff;
+		padding: 50px 85px 60px 0px;
+		box-shadow: 0px 5px 50.05px 4.95px rgba(0, 0, 0, 0.1);
+		&:before {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 300px;
+			top: 0;
+			left: 0;
+			background-repeat: no-repeat;
+			background-image: url(../img/background/f-cfbg.jpg);
+		}
+		.call-icon-bg {
+			right: 80px;
+			z-index: -1;
+			bottom: 40px;
+			position: absolute;
+			i {
+				font-size: 130px;
+				color: #edf1f4;
+			}
+		}
+		.feature-call-content {
+			float: right;
+			max-width: 710px;
+			h3 {
+				font-size: 30px;
+				color: #222;
+				padding-bottom: 8px;
+				span {
+					font-weight: 700;
+					color: $base-color2;
+				}
+			}
+			p {
+				font-size: 16px;
+				color: #555555;
+				padding-bottom: 22px;
+			}
+			a  {
+				color: #fff;
+				color: #fff;
+				font-weight: 700;
+				border-radius: 2px;
+				padding: 13px 32px;
+				display: inline-block;
+				text-transform: uppercase;
+				background-color: $base-color2;
+				i {
+					@extend%arrow-icon;
+					margin-left: 10px;
+				}
+				@extend%btn-hover;
+				&:before {
+					background-color: $base-color;
+				}
+			}
+		}
+	}
+}
+#features-slide-id {
+	.owl-dots {
+		margin-top: 48px;
+		text-align: center;
+		.owl-dot {
+			width: 30px;
+			height: 2px;
+			margin: 0px 3px;
+			display: inline-block;
+			background-color: #2797d1;
+			transition: .3s all ease-in-out;
+		}
+		.owl-dot.active {
+			height: 3px;
+			background-color: #fff;
+		}
+	}
+}

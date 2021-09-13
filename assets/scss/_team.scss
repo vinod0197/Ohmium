@@ -1,0 +1,67 @@
+.eltron-team-section {
+	padding: 190px 0px 170px;
+	.section-title-left {
+		padding-bottom: 30px;
+	}
+}
+.team-member-box {
+	.team-text {
+		padding: 30px;
+		margin-top: 10px;
+		transition: .3s all ease-in-out;
+		position: relative;
+		box-shadow: 0px 5px 50.05px 4.95px rgba(0, 0, 0, 0.1);
+		h3 {
+			color: #222;
+			font-size: 22px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			transition: .3s all ease-in-out;
+		}
+		p {
+			color: #555555;
+			font-size: 14px;
+			font-weight: 300;
+			transition: .3s all ease-in-out;
+		}
+		.team-social {
+			position: absolute;
+			bottom: -25px;
+			padding-bottom: 35px;
+			opacity: 0;
+			left: 0;
+			right: 0;
+			background-color: $base-color;
+			transition: .3s all ease-in-out;
+			a {
+				width: 35px;
+				color: #fff;
+				height: 35px;
+				line-height: 35px;
+				border-radius: 100%;
+				display: inline-block;
+				&:hover {
+					background-color: $base-color2;
+				}
+			}
+		}
+	}
+	&:hover {
+		.team-social {
+			opacity: 1;
+			bottom: -55px;
+		}
+		.team-text {
+			background-color: $base-color;
+			h3 {
+				color: #fff;
+			}
+			p {
+				color: #fff;
+			}
+		}
+	}
+}
+.about-page-team {
+	padding: 105px 0px 170px;
+}

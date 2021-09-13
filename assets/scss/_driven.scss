@@ -1,0 +1,110 @@
+.driven-solution-section {
+	padding: 105px 0px 110px;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 450px;
+		position: absolute;
+		z-index: -1;
+		opacity: .9;
+		background-color: #edf1f4;
+		top: 0;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 450px;
+		width: 100%;
+		z-index: -2;
+		background-image: url(../img/background/d-shape.png);
+	}
+	.section-title-left {
+		padding-bottom: 40px;
+	}
+	.features-content {
+		.features-icon-text {
+			box-shadow: 0px 5px 50.05px 4.95px rgba(0, 0, 0, 0.1);
+			margin-bottom: 0;
+			.features-hover-content .features-hover-text .fh-more a {
+				font-size: 14px;
+				font-weight: 300;
+				i {
+					@extend%arrow-icon;
+					margin-left: 5px;
+					font-size: 22px;
+				}
+			}
+			.features-icon {
+				svg {
+					fill: $base-color;
+				}
+			}
+			&:hover {
+				padding-bottom: 50px;
+			}
+		}
+	}
+	.driven-text-content {
+		padding-bottom: 70px;
+		border-bottom: 1px solid #eeeeee;
+	}
+	.driven-text {
+		margin: 0 auto;
+		max-width: 830px;
+		padding-top: 50px;
+		p {
+			font-weight: 600;
+			color: #555555;
+			font-size: 18px;
+		}
+		.about-btn {
+			display: inline-block;
+			margin-top: 40px;
+			.play-btn-icon {
+				margin-right: 20px;
+				position: relative;
+				z-index: 1;
+				&:before {
+					top: -5px;
+					left: -5px;
+					width: 50px;
+					content: '';
+					z-index: -1;
+					height: 50px;
+					position: absolute;
+					border-radius: 100%;
+					background-color: #c7f1f5;
+				}
+				&:after {
+					content: '';
+					top: -10px;
+					left: -10px;
+					width: 60px;
+					height: 60px;
+					z-index: -2;
+					position: absolute;
+					border-radius: 100%;
+					background-color: #e7f9fb;
+				}
+				i {
+					margin-right: 0;
+				}
+			}
+			@extend%about-video-btn;
+			a {
+
+				position: relative;
+				span {
+					font-size: 18px;
+					text-transform: capitalize;
+					margin-top: 0;
+				}
+				@extend%video-play;
+			}
+		}
+	}
+}
+.service-page-driven {
+	padding-bottom: 75px;
+}

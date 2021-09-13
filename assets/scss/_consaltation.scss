@@ -1,0 +1,65 @@
+.consaltation-section {
+	padding: 60px 0px 48px;
+	background-color: rgba(0, 113, 179, 0.88);
+	&:before,
+	&:after {
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 382px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		background-image: url(../img/background/cbg1.jpg);
+	}
+	&:after {
+		width: 50%;
+		right: 0;
+		left: auto;
+		z-index: -1;
+		background-image: url(../img/background/cbg2.jpg);
+	}
+	.consaltation-content {
+		.consaltation-icon {
+			@extend%left-icon;
+		}
+		.consaltation-text {
+			display: inline-block;
+			margin-top: 10px;
+			h3 {
+				color: #fff;
+				font-size: 30px;
+				display: inline-block;
+				margin-right: 20px;
+			}
+			span {
+				font-size: 30px;
+				font-weight: 700;
+				color: $base-color2;
+			}
+		}
+		.consalt-btn {
+			height: 60px;
+			width: 218px;
+			float: right;
+			line-height: 55px;
+			margin-top: 10px;
+			border-radius: 2px;
+			a {
+				border: 2px solid #ffffff;
+				width: 100%;
+				color: #fff;
+				display: block;
+				&:hover {
+					background-color: $base-color2;
+					border: 2px solid $base-color2;
+				}
+				i {
+					@extend%arrow-icon;
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}
